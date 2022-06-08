@@ -2,6 +2,7 @@
 import {Routes, Route, Link,} from 'react-router-dom';
 import Home from '../home';
 import Login from '../login';
+import Register from '../register';
 
 
 function Guest() {
@@ -17,6 +18,7 @@ function Guest() {
             <div className="navbar-nav">
               <Link className="nav-item nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>
               <Link className="nav-item nav-link" to="/login">Login</Link>
+              <Link className="nav-item nav-link" to="/register">Register</Link>
             </div>
           </div>
        </nav>
@@ -24,6 +26,7 @@ function Guest() {
          <Routes>
            <Route path="/" element={<Home />} />
            <Route path="/login" element={<Login />} />
+           <Route path="/Register" element={<Register />} />
          </Routes>
        </div>
     </div>
